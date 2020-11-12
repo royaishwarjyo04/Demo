@@ -6,16 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-<h1> Settings </h1>
+<h1 align="center"> Settings </h1>
     <table>
     <tr>
-    <td><button> Change Password </button> </td>
-    </tr>
-    <tr>
-    <td> <button> Change Address </button> </td>
-    </tr>
-    <tr>
-    <td> <button>Change Contact</button> </td>
+    <td><button> <a href= "changepassword.php"> Change Password </a> </button> </td>
     </tr>
     </table>
 </body>

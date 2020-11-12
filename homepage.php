@@ -6,11 +6,9 @@
     <title>Homepage</title>
 </head>
 <body>
- <h1> Homepage </h1>
- <button> Profile </button> <br> </br>
- <button> Settings </button> <br> </br>
- <button> Course List </button> <br> </br>
- <button> Students List </button> <br> </br>
-    
+ <h1 align="center"> Homepage </h1>
+ <button> <a href= "profile.php">  Profile </a> </button> <br> </br>
+ <button> <a href= "courselist.php"> Course List </a> </button> <br> </br>
+ <button> <a href= "studentlist.php"> Students List </a> </button> <br> </br>
 </body>
 </html>

@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-<h1> Course List </h1>
+<h1 align="center"> Course List </h1>
     <table>
     <tr>
     <td> Course Name </td>

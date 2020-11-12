@@ -6,7 +6,7 @@
     <title> Student</title>
 </head>
 <body>
-   <h1> Student List </h1>
+   <h1 align="center"> Student List </h1>
     <table>
     <tr>
     <td> Name </td>

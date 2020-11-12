@@ -6,7 +6,7 @@
     <title>Profile</title>
 </head>
 <body>
-    <h1 align="center">   Profile </h1>
+    <h1 align="center">  Profile </h1>
     <table>
     <tr>
     <td> Name </td>
@@ -24,6 +24,10 @@
     <td> Contact </td>
     <td> </td>
     </tr>
+    <tr>
+    <td> <button> <a href= "settings.php"> Settings </a> </button> <br> </br> </td>
+    </tr>
+   
   </table>
 </body>
 </html>
