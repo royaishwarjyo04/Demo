@@ -1,3 +1,7 @@
+<?php
+   session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,19 +14,19 @@
     <table>
     <tr>
     <td> Name </td>
-    <td> </td>
+    <td> <?php echo $_SESSION["name"] ?></td>
     </tr>
     <tr>
     <td> ID </td>
-    <td> </td>
+    <td> <?php echo $_SESSION["id"] ?></td>
     </tr> 
     <tr>
     <td> Address </td>
-    <td> </td>
+    <td>  <?php echo $_SESSION["address"] ?> </td>
     </tr>
     <tr>
     <td> Contact </td>
-    <td> </td>
+    <td>  <?php echo $_SESSION["contact"] ?> </td>
     </tr>
     <tr>
     <td> <button> <a href= "settings.php"> Settings </a> </button> <br> </br> </td>
