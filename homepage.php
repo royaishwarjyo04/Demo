@@ -14,5 +14,6 @@
  <button> <a href= "profile.php">  Profile </a> </button> <br> </br>
  <button> <a href= "courselist.php"> Course List </a> </button> <br> <br>
  <button> <a href= "studentlist.php"> Students List </a> </button> <br> <br>
+ <button> <a href= "logout.php"> LogOut </a> </button> <br> <br>
 </body>
 </html>

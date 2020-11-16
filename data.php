@@ -29,5 +29,11 @@
             else
             return "Failed update!";
         }
+
+        function getStudents($conn,  $table)
+        {
+            $result = $conn->query("select * from ".$table);
+            return $result;
+        }
     }
 ?>
