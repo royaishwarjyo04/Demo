@@ -23,6 +23,9 @@
             $_SESSION["password"] = $row["password"];
             $_SESSION["address"] = $row["address"];
             $_SESSION["contact"] = $row["contact"];
+            $_SESSION["dob"] = $row["dob"];
+            $_SESSION["gender"] = $row["gender"];
+            $_SESSION["department"] = $row["department"];
             
             header("location: homepage.php" );
         }

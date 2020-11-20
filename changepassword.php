@@ -8,7 +8,7 @@
 <body>
 <h1 align="center"> Change Password </h1>
     <form  method= "POST" action = "checkpassword.php">
-    <table>
+    <table border = "1px solid black">
     <tr>
     <td> Current Password </td>
     <td> <input type="password" name= "currentpassword" required > </td>

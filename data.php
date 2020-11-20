@@ -6,7 +6,7 @@
             $dbhost = "localhost";
             $dbuser = "root";
             $dbpass = "";
-            $db = "projectdb";
+            $db = "universitymanagement";
 
             $conn = new mysqli($dbhost, $dbuser, $dbpass, $db) or die("Connect failed: %s\n".$conn -> error);
 
@@ -34,6 +34,34 @@
         {
             $result = $conn->query("select * from ".$table);
             return $result;
+        }
+
+        function SelectQuery($conn, $sql)
+        {
+            $result = $conn->query($sql);
+            return $result;
+        }
+
+        function InsertQuery($conn, $sql)
+        {
+            if ($conn->query($sql) === TRUE) {
+                echo "New record created successfully";
+                return true;
+                } 
+            else {
+                echo "Error: " . $sql . "<br>" . $conn->error;
+            }
+        }
+
+        function UpdateQuery($conn, $sql)
+        {
+            if ($conn->query($sql) === TRUE) {
+                echo "Updated successfully!";
+                return true;
+                } 
+            else {
+                echo "Error: " . $sql . "<br>" . $conn->error;
+            }
         }
     }
 ?>

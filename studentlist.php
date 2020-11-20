@@ -17,13 +17,15 @@
     <th> ID </th>
     <th> Course </th>
     <th> Marks </th>
+    <th> GPA </th>
     <th></th>
     </tr>
     <?php $x=5;
         $_SESSION["count".$x] = $x;
         $connection = new data();
         $conobj = $connection->openCon();
-        $getRows = $connection->getStudents($conobj, "studentlist");
+        $sql = "select * from students";
+        $getRows = $connection->SelectQuery($conobj, $sql);
         $_SESSION['rows'] = $getRows;
         while($row = mysqli_fetch_array($getRows))
         {
@@ -34,6 +36,7 @@
     <td>".$row['id']."</td>
     <td>".$row['course']."</td>
     <td>".$row['marks']."</td>
+    <td>".$row['GPA']."</td>
     <th><button name = 'btn' value = '".$row['id']."' type = 'submit'>update</button></th>
     </form>
     </tr>";

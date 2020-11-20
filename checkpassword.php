@@ -24,24 +24,31 @@ if (isset($_POST["currentpassword"])||isset($_POST["newpassword"])||isset($_POST
 
     if(preg_match("#[A-Z]+#",$pass1) == 1 && preg_match("#[0-9]+#",$pass1) == 1 && strlen($pass1) >= 8 && $pass1==$pass2)
     {
-        echo "Password validated!";
+        //echo "Password validated!<br>";
         $connection = new data();
         $conobj = $connection->openCon();
         $userQuery = $connection->checkUser($conobj, "users", $_SESSION["username"], $_SESSION["password"]);
 
         if($userQuery->num_rows > 0)
         {
-            echo "Successfully verified";
+            echo "Successfully verified!<br>";
             $row = $userQuery->fetch_assoc();
             $username = $row["username"];
-            $updatePassQuery = $connection->changeUserPassword($conobj, "users", $pass1, $username);
+            $sql = "update users set password = '".$pass1."' where username = '".$username."'";
+            $updatePassQuery = $connection->UpdateQuery($conobj, $sql);
+            //echo $sql;
             echo "Password successfully changed!";
-            echo $updatePassQuery;
+            $_SESSION["password"] = $pass1;
+            //echo $updatePassQuery;
         }
         else
         {
             echo "Incorrect password <br>";
         }
+    }
+    else
+    {
+        echo "Password not validated!<br>";
     }
 }
 ?>
