@@ -10,7 +10,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h4><a href= "login.php"> Return to Log In Screen</a> </button></h4>
+    <h4><a href= "../view/login.php"> Return to Log In Screen</a> </button></h4>
 </body>
 </html>
     

@@ -7,7 +7,7 @@
 
    $connection = new data();
    $conobj = $connection->openCon();
-   $sql = "update students set marks = ".$mark." where id = ".$_SESSION["id"];
+   $sql = "update resultlist set mark = ".$mark." where id = ".$_SESSION["id"];
    $getRows = $connection->UpdateQuery($conobj, $sql);
    
    if($mark >= 90)
@@ -51,7 +51,19 @@
     $gpa = 0.00;
    }
 
-   $gpaSql = "update students set gpa = ".$gpa." where id = ".$_SESSION["id"];
+   $gpaSql = "update resultlist set gpa = ".$gpa." where id = ".$_SESSION["id"];
    $getRows = $connection->UpdateQuery($conobj, $gpaSql);
 
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3><a href = "result.php">Go back to Results</a></h3>
+</body>
+</html>

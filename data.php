@@ -15,7 +15,12 @@
 
         function checkUser($conn,  $table, $username, $password)
         {
-            $result = $conn->query("select * from ".$table." where username = '".$username."' and password='".$password."'");
+            $result = $conn->query("select * from ".$table." where userid = '".$username."' and userpassword='".$password."'");
+            return $result;
+        }
+        function User($conn,  $table, $username)
+        {
+            $result = $conn->query("select * from ".$table." where username = '$username'");
             return $result;
         }
 
