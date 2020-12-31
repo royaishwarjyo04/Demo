@@ -40,11 +40,6 @@ h1
     /*background-color: darkturquoise;*/
 }
 
-.btn:hover
-{
-    color:beige;
-}
-
 .btn
 {
     color: rgb(56, 212, 199);
@@ -54,6 +49,12 @@ h1
     border-radius: 10px;
     border: 2px solid rgb(2, 2, 68);
     width:40%;
+}
+
+.btn:hover
+{
+    color:beige;
+    cursor:pointer;
 }
 
 .tbl table
@@ -83,7 +84,9 @@ h1
 input[type="password"] 
 {
     border-radius: 10px; 
-    padding-left: 10px;
+    /*padding-left: 30px;*/
+    text-align:center;
+    font-size: 15px;
 }
 
 .footer
@@ -97,3 +100,29 @@ input[type="password"]
     color: darkblue;
 }
 
+
+.search input[type="text"] 
+{
+    border-radius: 10px; 
+    /*padding-left: 30px;*/
+    text-align:center;
+    font-size: 18px;
+    width:30%;
+}
+
+.search .btn
+{
+    color: rgb(56, 212, 199);
+    background-color: rgb(6, 83, 199);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 2px solid rgb(2, 2, 68);
+    width: auto;
+}
+
+.search .btn:hover
+{
+    color:beige;
+    cursor:pointer;
+}
